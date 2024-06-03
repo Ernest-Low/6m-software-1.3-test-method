@@ -2,15 +2,15 @@
 let empty = [];
 
 // Initializing array with default values
-let defaults = [1,2,"3"]; // some programming languages do not allow mixed type.
+let defaults = [1, 2, "3"]; // some programming languages do not allow mixed type.
 console.log("defaults", defaults);
 
 // Retrieve the first element in array
 console.log("first element value is", defaults[0]);
 
 // Looping an array
-for(let i=0 ;i<defaults.length; i++){
-    console.log("value of i is", i, "and the value is", defaults[i]);
+for (let i = 0; i < defaults.length; i++) {
+  console.log("value of i is", i, "and the value is", defaults[i]);
 }
 
 /*Class discussion
@@ -35,3 +35,17 @@ Question 2:
 const arr1 = [15, 12, 11, 29, 5];
 const arr2 = [13, 2, 6, 7];
 */
+
+// ? Q1
+const grades = [65, 72, 43, 45, 93];
+let ave = 0;
+for (i of grades) {
+  ave = ave + i / grades.length;
+}
+console.log(`Average Grade: ${ave}`);
+
+// ? Q2
+const arr1 = [15, 12, 11, 29, 5];
+const arr2 = [13, 2, 6, 7];
+const odds = arr1.concat(arr2).filter((num) => num % 2 != 0);
+console.log(`Odds array: ${odds}`);

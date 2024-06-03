@@ -3,17 +3,17 @@ let empty = {};
 
 // Initializing object with default value
 const person = {
-    name:"John Doe",
-    yearOfBirth: 1987
-}
+  name: "John Doe",
+  yearOfBirth: 1987,
+};
 console.log("person", person);
 
 // Retrieve the value of "yearOfBirth" property
 console.log("I am born in", person.yearOfBirth);
 
 // Looping an object
-for(let key in person){
-    console.log("key is", key, "and value is", person[key]);
+for (let key in person) {
+  console.log("key is", key, "and value is", person[key]);
 }
 
 /*Class discussion
@@ -32,3 +32,12 @@ Exercise:
     d. coursesOffered - Array containing 3 Strings
 2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
 */
+
+const school = {
+  name: "School-A",
+  yearEstablished: 2024,
+  isActive: true,
+  coursesOffered: ["Math", "Science", "English"],
+};
+
+console.log(`Welcome to ${school.name} and we offer ${school.coursesOffered.join(", ")}`);
